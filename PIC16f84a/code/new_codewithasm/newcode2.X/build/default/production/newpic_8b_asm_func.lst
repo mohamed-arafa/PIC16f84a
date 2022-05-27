@@ -1,0 +1,37 @@
+
+
+Microchip MPLAB XC8 Assembler V2.36 build 20220127204148 
+                                                                                                           Wed May 25 10:27:41 2022
+
+
+     1                           	processor	16F84A
+     2                           	pagewidth 132
+     3                           	psect	pa_nodes0,global,class=CODE,delta=2
+     4                           
+     5                           ;Portb test program , August 2021
+     6                           ;-----------------------------------------
+     7  0089                     
+     8                           ;-----------------------------------------
+     9  0000  2801               	goto	start
+    10  0001                     start:
+    11  0001  1583               	bsf	3,3
+    12  0002  1405               	bsf	133,0	;set ((PORTA) and 07Fh), 0 as input
+    13  0003  1386               	bcf	134,7	;set ((PORTB) and 07Fh), 7 as output
+    14  0004  1183               	bcf	3,3
+    15  0005  2806               	goto	MAIN
+    16  0006                     MAIN:	
+    17                           ;-----------------------------------------
+    18                           
+    19  0006  1386               	bcf	6,7	;set a 0 bit at output i.e pin ((PORTB) and 07Fh), 7
+    20  0007                     loop:
+    21  0007  1C05               	btfss	5,0	;test ((PORTA) and 07Fh), 0 and skip is ((PORTA) and 07Fh), 0=1
+    22  0008  2806               	goto	MAIN	;goto MAIN
+    23  0009  1786               	bsf	6,7	;set a 1 bit at ((PORTB) and 07Fh), 7
+    24  000A  2807               	goto	loop
+
+
+Microchip Technology PIC Macro Assembler V2.36 build 20220127204148 
+Symbol Table                                                                                               Wed May 25 10:27:41 2022
+
+                      MAIN 0006                        loop 0007                       PORTA 0005                       PORTB 0006  
+                     TRISA 0085                       TRISB 0086                       start 0001                      STATUS 0003  

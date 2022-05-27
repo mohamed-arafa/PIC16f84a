@@ -1,0 +1,133 @@
+Microchip MPLAB XC8 Compiler V2.36
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.36\pic\dat\en_msgs.txt -cn \
+  -h+dist/default/debug\newcode2.X.debug.sym \
+  --cmf=dist/default/debug\newcode2.X.debug.cmf -z -w9 --disl=596:off \
+  -Q16F84A -oC:\Users\MOHAME~1\AppData\Local\Temp\xcAscbg.4 \
+  --defsym=__MPLAB_BUILD=1 -Mdist/default/debug/newcode2.X.debug.map -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-03FFh -ASTRCODE=00h-03FFh \
+  -ASTRING=00h-0FFhx4 -ACONST=00h-0FFhx4 -AENTRY=00h-0FFhx4 \
+  -ABANK0=0Ch-04Dh -ARAM=0Ch-04Dh -AABS1=0Ch-04Fh -ACOMMON=04Eh-04Fh \
+  -ASFR0=00h-0Bh -ASFR1=080h-0CDh -ACONFIG=02007h-02007h -DCONFIG=2 \
+  -AIDLOC=02000h-02003h -DIDLOC=2 -AEEDATA=00h-03Fh/02100h \
+  -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
+  -DENTRY=2 -preset_vec=00h,intentry,init,end_init -ppowerup=CODE \
+  -pcinit=CODE -pfunctab=ENTRY -k \
+  C:\Users\MOHAME~1\AppData\Local\Temp\xcAscbg.o \
+  build/default/debug/newpic_8b_asm_func.o 
+
+Object code version is 3.11
+
+Machine type is 16F84A
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\MOHAME~1\AppData\Local\Temp\xcAscbg.o
+                end_init                              0        0        2        0       0
+build/default/debug/newpic_8b_asm_func.o
+                barfunc                             3FE      3FE        2      7FC       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                end_init                              0        0        2         0
+                barfunc                             3FE      3FE        2         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   BANK0          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+
+        CLASS   COMMON         
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   BANK1          
+
+        CLASS   STACK          
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000002  000002         0       0  CODE        2
+                barfunc                        0003FE  000002  000400       7FC       0  CODE        2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            00C-04D            42           1
+        CODE             002-3FD           3FC           2
+        COMMON           04E-04F             2           1
+        CONFIG           2007-2007             1           2
+        CONST            002-3FD           100           2
+        EEDATA           2100-213F            40           2
+        ENTRY            002-3FD           100           2
+        IDLOC            2000-2003             4           2
+        RAM              00C-04D            42           1
+        SFR0             000-00B             C           1
+        SFR1             080-0CD            4E           1
+        STRCODE          002-3FD           3FC           2
+        STRING           002-3FD           100           2
+
+                                  Symbol Table
+
+__Habs1              abs1        000  __Hbank0             bank0       000
+__Hbank1             bank1       000  __Hcinit             cinit       000
+__Hclrtext           clrtext     000  __Hcode              code        000
+__Hcommon            common      000  __Hdata              data        000
+__Hedata             edata       000  __Heeprom_data       eeprom_data 000
+__Hend_init          end_init    002  __Hfunctab           functab     000
+__Hinit              init        000  __Hintentry          intentry    000
+__Hmaintext          maintext    000  __Hpa_nodes0         pa_nodes0   000
+__Hpowerup           powerup     000  __Hram               ram         000
+__Hreset_vec         reset_vec   000  __Hsfr0              sfr0        000
+__Hsfr1              sfr1        000  __Hspace_0           (abs)       400
+__Hspace_1           (abs)       000  __Hspace_2           (abs)       000
+__Hspace_3           (abs)       000  __Hstack             stack       000
+__Hstrings           strings     000  __Htext              text        000
+__Hudata             udata       000  __Hudata_bank0       udata_bank0 000
+__Labs1              abs1        000  __Lbank0             bank0       000
+__Lbank1             bank1       000  __Lcinit             cinit       000
+__Lclrtext           clrtext     000  __Lcode              code        000
+__Lcommon            common      000  __Ldata              data        000
+__Ledata             edata       000  __Leeprom_data       eeprom_data 000
+__Lend_init          end_init    000  __Lfunctab           functab     000
+__Linit              init        000  __Lintentry          intentry    000
+__Lmaintext          maintext    000  __Lpa_nodes0         pa_nodes0   000
+__Lpowerup           powerup     000  __Lram               ram         000
+__Lreset_vec         reset_vec   000  __Lsfr0              sfr0        000
+__Lsfr1              sfr1        000  __Lspace_0           (abs)       000
+__Lspace_1           (abs)       000  __Lspace_2           (abs)       000
+__Lspace_3           (abs)       000  __Lstack             stack       000
+__Lstrings           strings     000  __Ltext              text        000
+__Ludata             udata       000  __Ludata_bank0       udata_bank0 000
+__S0                 (abs)       400  __S1                 (abs)       000
+__S3                 (abs)       000  ___int_sp            stack       000
+___sp                stack       000  ___stackhi           (abs)       000
+___stacklo           (abs)       000  _bar                 barfunc     3FE
+_main                                 intlevel0            functab     000
+intlevel1            functab     000  intlevel2            functab     000
+intlevel3            functab     000  intlevel4            functab     000
+intlevel5            functab     000  reset_vec            reset_vec   000
+start                init        000  start_initialization                

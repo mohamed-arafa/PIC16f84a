@@ -1,0 +1,166 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/newpic_8b_asm_func.o
+code CODE 0 3D4 3D4 2C 2 1
+resetVect CODE 0 0 0 1 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM C-4D 1
+BANK0 C-4D 1
+CONST 1-3D3 2
+ENTRY 1-3D3 2
+IDLOC 2000-2003 2
+CODE 1-3D3 2
+SFR0 2-B 1
+SFR1 80-CD 1
+COMMON 4E-4F 1
+EEDATA 2100-213F 2
+STRCODE 1-3D3 2
+STRING 1-3D3 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/newpic_8b_asm_func.o
+0 resetVect CODE >28:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+0 resetVect CODE >29:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3D4 code CODE >37:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3D5 code CODE >38:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3D6 code CODE >39:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3D7 code CODE >40:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3D8 code CODE >41:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3D9 code CODE >42:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3DA code CODE >43:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3DB code CODE >45:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3DC code CODE >46:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3DD code CODE >47:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3DE code CODE >48:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3DF code CODE >49:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E0 code CODE >50:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E1 code CODE >51:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E2 code CODE >52:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E3 code CODE >54:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E4 code CODE >55:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E5 code CODE >56:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E6 code CODE >57:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E7 code CODE >60:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E8 code CODE >61:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3E9 code CODE >62:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3EA code CODE >66:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3EB code CODE >67:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3EC code CODE >69:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3ED code CODE >70:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3EE code CODE >71:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3EF code CODE >72:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F0 code CODE >73:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F1 code CODE >74:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F2 code CODE >75:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F3 code CODE >76:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F4 code CODE >78:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F5 code CODE >79:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F6 code CODE >80:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F7 code CODE >81:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F8 code CODE >82:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3F9 code CODE >96:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3FA code CODE >97:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3FB code CODE >100:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3FC code CODE >101:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3FD code CODE >102:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3FE code CODE >103:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+3FF code CODE >104:E:\USB\student activity\free\PIC16f84a\code\new_codewithasm\Code_new3.X\newpic_8b_asm_func.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 400 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 2 0 ABS 0 udata_bank0 -
+__Hedata 2 0 ABS 0 edata -
+__Hudata 2 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 2 0 ABS 0 edata -
+__Ludata 2 0 ABS 0 udata -
+__Hcode 2 0 ABS 0 code -
+__Hdata 2 0 ABS 0 data -
+__Lcode 2 0 ABS 0 code -
+__Ldata 2 0 ABS 0 data -
+__S0 400 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect 2 0 CODE 0 resetVect -
+__Ludata_bank0 2 0 ABS 0 udata_bank0 -
+__LresetVect 0 0 CODE 0 resetVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+code 0 3D4 7A8 2C 2
+resetVect 0 0 0 1 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
